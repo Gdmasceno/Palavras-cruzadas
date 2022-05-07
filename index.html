@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palavras cruzadas</title>
+</head>
+
+<body>
+
+    <div class="titulo">Palavras cruzadas</div>
+    <button>Ver descrição</button>
+
+    <div class="container">
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco n down">1</div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+        <div class="grupo_blocos">
+            <div class="bloco n"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco n down">8</div>
+            <div class="bloco ativo">
+                <input onkeyup="validarROM()" id="txt_1n1" type="text" maxlength="1">
+            </div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco n right">2</div>
+            <div class="bloco ativo">
+                <input onkeyup="validarEPROM()" id="txt_2n1" type="text" maxlength="1">
+            </div>
+            <div class="bloco ativo">
+                <input onkeyup="validarEPROM()" id="txt_2n2" type="text" maxlength="1">
+            </div>
+            <div class="bloco ativo">
+                <input onkeyup="validarEPROM()" id="txt_2n3" type="text" maxlength="1">
+            </div>
+            <div class="bloco ativo">
+                <input onkeyup="validarROM()" id="txt_1n2" type="text" maxlength="1">
+            </div>
+            <div class="bloco ativo">
+                <input onkeyup="validarEPROM()" id="txt_2n5" type="text" maxlength="1">
+            </div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo">
+                <input onkeyup="validarROM()" id="txt_1n3" type="text">
+            </div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco n">10</div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco">3</div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco ativo"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+
+        <div class="grupo_blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="main.js"></script>
