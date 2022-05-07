@@ -87,3 +87,7 @@ padding: 0px 10px;
 input:focus{
     outline: none;
 }
+
+input:disabled{
+    background-color: rgb(241, 241, 241);
+}

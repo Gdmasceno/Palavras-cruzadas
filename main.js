@@ -49,3 +49,21 @@ function validarEPROM() {
         txt_2n5.style.color = "red";
     }
 }
+
+function validarI7(){
+    var three_n1 = (txt_3n1.value).toLowerCase();
+    var three_n2 = (txt_3n2.value).toLowerCase();
+
+    if(three_n1 == "i" && three_n2 == 7){
+        txt_3n1.style.color = "green";
+        txt_3n2.style.color = "green";
+
+        txt_3n1.disabled = "disabled";
+        txt_3n2.disabled = "disabled";
+    }
+
+    else{
+        txt_3n1.style.color = "red";
+        txt_3n2.style.color = "red";
+    }
+}
