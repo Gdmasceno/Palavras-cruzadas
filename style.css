@@ -91,3 +91,37 @@ input:focus{
 input:disabled{
     background-color: rgb(241, 241, 241);
 }
+
+.elev{
+    margin-left: -100px;
+}
+
+
+.grupo_blocos .sep{
+    width: 30px;
+    height: 45px;
+    border: 1px solid black;
+    margin-right: 2px;
+    border-radius: 5px;
+    margin-left: 2px;
+}
+
+span{
+    font-size: 13px;
+    margin-left: 10px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+.sep input{
+    width: 90%;
+    height: 80%;
+    font-size: 18px;
+    font-family: 'Bungee',cursive;
+    color: rgb(34, 34, 34);
+    border: none;
+padding: 0px 10px;
+
+align-items: center;
+
+}
