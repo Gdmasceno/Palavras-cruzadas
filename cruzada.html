@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/newStyle.css">
+    <title>Palavras cruzadas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cruzada">
+
+           <div class="main">
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">10</div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">1</div>
+                <div class="bloco ativo"><input onkeyup="validarROM()" id="txt_1n1" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarROM()" id="txt_1n2" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarROM()" id="txt_1n3" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">2</div>
+                <div class="bloco ativo"><input onkeyup="validarEPROM()" id="txt_2n1" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarEPROM()" id="txt_2n2" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarEPROM()" id="txt_2n3" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarEPROM()" id="txt_2n4" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input onkeyup="validarEPROM()" id="txt_2n5" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n3" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n4" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n5" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">12</div>
+                <div class="bloco ativo"><input id="txt_12n1" onkeyup="validarI5()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_12n2" onkeyup="validarI5()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n7" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">13</div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n8" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">14</div>
+                <div class="bloco ativo"><input id="txt_14n1" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n2" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n3" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_13n1" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_14n5" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n6" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n7" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n8" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+                <div class="bloco ativo"><input id="txt_14n9" onkeyup="validarQuadCore()" type="text" maxlenght="1"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">7</div>
+                <div class="bloco ativo"><input id="txt_7n1" onkeyup="validarDMA()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_7n2" onkeyup="validarDMA()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_7n3" onkeyup="validarDMA()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_13n2" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">4</div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n10" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_13n3" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_4n1" onkeyup="validarCPU()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n11" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">5</div>
+                <div class="bloco ativo"><input id="txt_5n1" onkeyup="validarFlash()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_5n2" onkeyup="validarFlash()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_5n3" onkeyup="validarFlash()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_5n4" onkeyup="validarFlash()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_5n5" onkeyup="validarFlash()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_4n2" onkeyup="validarCPU()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_10n12" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco">11</div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_13n5" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">6</div>
+                <div class="bloco ativo"><input id="txt_4n3" onkeyup="validarCPU()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_6n2" onkeyup="validarULA()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_6n3" onkeyup="validarULA()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n1" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_13n6" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">15</div>
+                <div class="bloco ativo"><input id="txt_10n14" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n2" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco">16</div>
+                <div class="bloco"></div>
+                <div class="bloco">3</div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_13n7" onkeyup="validarDataBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco">8</div>
+                <div class="bloco ativo"><input id="txt_8n1" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n2" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n3" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n4" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n5" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n6" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n7" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n8" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n9" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n10" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_3n1" onkeyup="validarRAM()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n12" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_8n13" onkeyup="validarRegistradores()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_15n2" onkeyup="validarI7()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_10n16" onkeyup="validarMemoriaDeMassa()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n4" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n2" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_3n2" onkeyup="validarRAM()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco">9</div>
+                <div class="bloco ativo"><input id="txt_9n1" onkeyup="validarCS()" type="text" maxlength="1"></div>
+                <div class="bloco ativo"><input id="txt_9n2" onkeyup="validarCS()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n3" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_3n3" onkeyup="validarRAM()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n6" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n4" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n7" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n5" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n8" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n6" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n9" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n7" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_11n10" onkeyup="validarAdressBus()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n8" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco ativo"><input id="txt_16n9" onkeyup="validarDualCore()" type="text" maxlength="1"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+    
+            <div class="grupo_blocos">
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+                <div class="bloco"></div>
+            </div>
+           </div>
+        </div>
+
+        <div class="descricao">
+            <div class="titulo">Descrição</div>
+            <p id="um">1 - Tipo de memória que permite apenas a leitura, não podem ser alteradas, apenas acessadas</p>
+            <p id="dois">2 - Chip de memória de computador que mantém os dados quando a energia é desligada, e programada por um dispositivo eletrônico</p>
+            <p id="tres">3 - Espaço de armazenamento de dados temporários</p>
+            <p id="quatro">4 - Considerara o cérebro do PC, principal item de hardware de um computador</p>
+            <p id="cinco">5 - Parecida com a memória EPROM, embora mais rápida na reescrita</p>
+            <p id="seis">6 - Executa as operações aritméticas e lógicas referenciadas pelos opcodes</p>
+            <p id="sete">7 - Acesso de certos dispositivos à memoria do sistema para leitura e escrita</p>
+            <p id="oito">8 - A memória dentro da própria CPU que armazena N bits</p>
+            <p id="nove">9 - Mecanismo para permitir a CPU acessas memórias e periféricos externos</p>
+            <p id="dez">10 - Armazena grandes quantidades de informações, e os dados não são perdidos ao desligar a máquina</p>
+            <p id="onze">11 - uma dada localização de memória</p>
+            <p id="doze">12 - Processador lançado em setembro de 2009, possui 4 threads comuns a todos os componentes até a sétima geração</p>
+            <p id="treze">13 - Via elétrica usada para transferir dados entre componentes</p>
+            <p id="quatorze">14 - “Divisão de tarefas”, onde possui dóis ou mais núcleos, capaz de processar tarefas múltiplas</p>
+            <p id="quinze">15 - Processador que utiliza o Hyper-Threading para melhor performance em multitarefas</p>
+            <p id="dezesseis">16 - “Divisão de tarefas”, onde possui dóis núcleos, capaz de processar tarefas múltiplas</p>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="resources/js/main.js"></script>
