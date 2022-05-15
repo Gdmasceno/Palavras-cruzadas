@@ -1,5 +1,9 @@
 
 function validarROM() {
+
+    // Aqui eu estou guardando nas variáveis os valores dos inputs
+    // Obs importante: o toLowerCase está convertendo o valor em minúsculo para não dar conflito na validação
+
     var one_n1 = (txt_1n1.value).toLowerCase();
     var one_n2 = (txt_1n2.value).toLowerCase();
     var one_n3 = (txt_1n3.value).toLowerCase();
@@ -9,6 +13,8 @@ function validarROM() {
         txt_1n2.style.color = "green";
         txt_1n3.style.color = "green";
 
+        // Aqui estou disabilitando os input
+        
         txt_1n1.disabled = "disabled";
         txt_1n2.disabled = "disabled";
         txt_1n3.disabled = "disabled";
